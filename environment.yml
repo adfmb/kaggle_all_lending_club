@@ -1,0 +1,13 @@
+name: lending_club  # Este nombre se puede cambiar al ejecutar el script
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10.13  # Versión específica para replicabilidad
+  - pip
+  # Instalar numba y llvmlite desde conda para evitar problemas de compilación
+  - numba
+  - llvmlite
+  - pip:
+    - -r requirements.txt
+
